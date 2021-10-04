@@ -1,0 +1,31 @@
+Review Exercise
+=============== see https://pastebin.com/93JDmKeS
+until about 4:45
+
+Start a fresh Angular project with routing and css
+(decide on a suitable name, e.g. 'review1')
+OR... for some of you, just go with what already works!!!
+
+Use a comand window to generate two fresh modules
+ng g c users
+ng g c login
+
+In the login component
+- in the TS file, declare model for fname, lname and pword
+- bind these values onto the HTML template
+- also provide a button which changes the password to something else (pre-set)
+  (you will need an event handler)
+In the users components
+- in the TS declare a model with several users e.g. an array of objects (like our items)
+- in the HTML iterate to show the fname, lname and pword values
+Optional (if time)
+- write some CSS in each compoent to style the html
+- e.g. choose a font, color, background-color 
+- maybe set the headings color
+- add a footer component with legal text (i.e. courier)
+
+
+
+We need to ask the user for....
+And then show....
+Architect using components
