@@ -1,0 +1,11 @@
+/* This style sheet will be used by index.html */
+/* Tag Styles (apply automatically) */
+body {font-family:Arial, Helvetica, sans-serif}
+h3, h4, h5 {color: darkgreen;}
+p, li {color: darkcyan;}
+/* Class Styles (apply anywhere manually) */
+/* for size, use relative such as percent or 'em' */
+.branding {background-color: cadetblue; font-size: 200%; } 
+
+/* ID styles (apply manually use ONCE) */
+#legal {font-family: 'Courier New', Courier, monospace;}

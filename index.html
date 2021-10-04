@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to style sheets here -->
+    <link rel='stylesheet' href="styles/index.css" />
     <title>Web Tech Overview</title>
 </head>
 <body>
     <!-- aim to use semantic tags -->
     <article>
-        <header>
+        <header class="branding">
             <heading>HTML CSS and ECMAScript</heading>
         </header>
         <nav>
@@ -31,9 +33,9 @@
             <h3>CSS Cascading Style Sheets</h3>
             <p>Styles for presentation and responsive layout</p>
                 <ol>
-                    <li>Tag Styles</li>
-                    <li>Class Styles</li>
-                    <li>ID styles</li>
+                    <li>Tag Styles - automatic, use as much as possible</li>
+                    <li>Class Styles - manually apply for consistency</li>
+                    <li>ID styles - use ONCE only</li>
                 </ol>
         </section>
         <section>
@@ -46,14 +48,24 @@
             </ul>
             <aside>
                 <h4>Images</h4>
-
+                <input id='txtCustom' placeholder="Enter text for image" />
                 <button id='btnGetImage'>Go</button>
                 <br/>
-                <img src='https://via.placeholder.com/320x120.png?text=Dobbin' />
-
+                <!-- HTML tags may have attributes such as id, src etc. -->
+                <img id='myImage' src='https://via.placeholder.com/320x120.png?text=Dobbin' />
+            </aside>
+            <aside>
+                <h4>Accessing end-point APIs</h4>
+                <!-- we need a form -->
+                <input id='txtCat' placeholder="category" />
+                <input id='txtID' placeholder="id" />
+                <br/>
+                <button id='btnGetData'>Get Data</button>
+                <!-- we need somewhere to see the returned results -->
+                <pre id='monitor'></pre>
             </aside>
         </section>
-        <footer>
+        <footer class='branding' id='legal'>
             &copy;2021 Read our legal notice
         </footer>
     </article>
