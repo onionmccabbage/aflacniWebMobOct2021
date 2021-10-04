@@ -1,0 +1,9 @@
+<section>
+    <h4>Conditional Display...</h4>
+    <p>Two ways: *ngIf and bind to 'hidden' attribute</p>
+    <!-- in Angular, we must bind events to Angular methods NB in Angular we INCLUDE the method brackets-->
+    <!-- NB the round brackets are one-way event binding FROM the button TO it's parent (the component) -->
+    <p *ngIf='askCookies'>Do you agree to cookies?<button (click)='handleAgree()' >Agree</button></p>
+    <!-- NB the square brackets are one-way binding INTO the paragraph FROM it's parent -->
+    <p [hidden]='toggle'>Some content should come and go as needed</p>
+</section>

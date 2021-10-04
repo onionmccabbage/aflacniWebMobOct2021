@@ -1,0 +1,6 @@
+<section>
+    <h4>Current Products</h4>
+    <ul>
+        <li *ngFor='let item of items'>{{item.name}} {{item.price |currency:'EUR'}} </li>
+    </ul>
+</section>
