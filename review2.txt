@@ -1,0 +1,33 @@
+Review 2
+========
+Make a new Angular project (with routing and css) (start in the base folder (NOT inside a proj) )
+Use a service to either access https://swapi.dev/api or access your own API end-point
+
+For swapi:
+- ask the user for a category ('people', 'planets', 'species')
+- also ask for a number (1-7)
+- make a get request to http://swapi.dev/api/people/1 (or similar)
+- from the returned response, show the 'name' property on screen
+
+For your own API end-point:
+- ask the user for relevant parameters
+- make requests to your API using get, post etc. as appropriate
+  (this will need some methods in your serrvice)
+- show stuff nicely on screen
+  (call the service method, subscribe to the response and do stuff)
+To call your own REST APIs you will need to enable CORS
+There are two things to do:
+- Update the SAM deployment file to allow cors
+- Update the Lambda functions so they add the cors header to the response
+There is a stackoverflow question that explains how:
+https://stackoverflow.com/questions/50229563/using-cors-with-aws-sam
+
+Consider using @Input and @Output between components
+
+Optional (if time)
+------------------
+- consider when and where it would make sense to use routing
+- E.g. every time a request is made, persist the results in an array
+  Then show these data in a routed component
+  Careful - avoid passing data between routed components, unless it is very trivial
+
