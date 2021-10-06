@@ -1,6 +1,6 @@
 Review Exercise
-=============== see https://pastebin.com/93JDmKeS
-until about 4:45
+===============
+until about 4:45  see https://github.com/onionmccabbage/aflacniWebMobOct2021/blob/main/aflacReview1.txt
 
 Start a fresh Angular project with routing and css
 (decide on a suitable name, e.g. 'review1')
