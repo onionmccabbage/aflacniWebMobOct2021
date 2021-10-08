@@ -112,19 +112,10 @@ Friday
   - what you aim to do
 - recommend code freeze by (say) mid afternoon
 - preso will be Monday 9:00
-- if any team would like to dry run their preso let me know
-  - 2:00 team Alobayo (?!?)
-  - 2:30 ....
-  - 3:30 team Marbled << can Team MARBLED please make their way to the preso room at 3:30 and join the OTHER webex call
-                         (link in chat)
 
 - Can I suggest you try to make a MOBILE version of your code
 - my 'arch' project is now up in the repo (as arch.zip)
   - includes 'api.service.ts' with sample code for Nicks and one other end-point working
-
-- there was  a question related to custom pipe for 'health...'
-- any chance to see your repo? Ah-got it
-
 
 - angular vs Ionic
   - you have an Angular proj
