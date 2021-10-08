@@ -1,0 +1,46 @@
+I had to add the following:
+
+1. In the template.yml Globals section:
+
+Api:
+    Cors:
+      AllowMethods: "'GET,POST,OPTIONS'"
+      AllowHeaders: "'content-type'"
+      AllowOrigin: "'*'"
+      AllowCredentials: "'*'"
+
+2. In the Lambda function where the response is created add the cors
+headers:
+
+const response = {
+        headers: {
+          "Access-Control-Allow-Origin": "*", // Required for CORS support
+to work
+          "Access-Control-Allow-Credentials": true // Required for cookies,
+authorization headers with HTTPS
+        },
+        statusCode: 200,
+        body: JSON.stringify(body)
+      };
+
+That's it.
+
+I then created a super simple HTML snippet using fetch and it worked fine:
+
+   let newAlbum = {
+            "artist": "Yaeow",
+            "album_id": "10",
+            "price": 12.99,
+            "tracks": 11,
+            "title": "I Need U"
+        };
+
+        fetch('https://tg1kms3jh8.execute-api.eu-west-1.amazonaws.com/Prod',
+{
+            method: "POST",
+            body: JSON.stringify(newAlbum),
+            headers: {"Content-type": "application/json; charset=UTF-8"}
+        })
+        .then(response => response.json())
+        .then(json => console.log(json))
+        .catch(err => console.log(err));
