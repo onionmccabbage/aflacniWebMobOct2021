@@ -1,0 +1,21 @@
+Cognito mini exercise (until 10:30)
+=====================
+
+- will you have resources to implement authentication?
+- either
+  - prepare how you could use it
+- or 
+  - begin to use it!
+  - build something proof of concept
+
+deliverables
+- some spiel for the preso
+- some UI ideas (wire-frame or better)
+- maybe some functionality
+
+Optional
+- consider routing security - read the docs for routing guards
+
+NB We are on target for you to have ALL of Fri morning on your projects
+- aim to code-freeze at some point on Fri morning
+- and get your preso ready!

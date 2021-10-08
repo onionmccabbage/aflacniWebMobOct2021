@@ -1,7 +1,13 @@
 Review 2
-========
+========  (this text is in the repo)
 Make a new Angular project (with routing and css) (start in the base folder (NOT inside a proj) )
 Use a service to either access https://swapi.dev/api or access your own API end-point
+
+Tues Afternoon
+- a bit of demo from me (SwapiTD - download, unzip npm install and enjoy)
+- carry on
+- 4:40 a bit of show-and-tell
+
 
 For swapi:
 - ask the user for a category ('people', 'planets', 'species')

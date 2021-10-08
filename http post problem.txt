@@ -1,0 +1,45 @@
+Problem:
+
+// client side service
+
+request :   let httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Access-Control-Allow-Origin': '*',
+        // 'Access-Control-Allow-Methods': 'PUT, POST'
+        // 'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+      })
+    };
+
+let url = `https://92jpr1aipd.execute-api.eu-west-1.amazonaws.com/Prod/`
+    //make a request
+    return this.http.post(url,claimInfo,httpOptions)
+
+
+// server side response
+const response = {
+headers: {
+'Content-Type': 'application/json',
+'Access-Control-Allow-Origin': '*',
+"Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
+'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
+},
+statusCode: 200,
+body: JSON.stringify(body)
+};
+
+// exception CORS denied
+
+
+
+
+
+
+
+
+
+
+
+
+
+

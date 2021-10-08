@@ -1,0 +1,160 @@
+Web and Mobile
+==============
+
+Toby Dussek
+4-8 Oct 2021
+
+You will need to install Android Studio
+Follow setup here: https://ionicframework.com/docs/developing/android
+(stop after creating an Android emulator)
+
+Break until 10:20
+
+Monday
+> Welcome - what you know html, css javascript, ionic
+> Web technologies HTML, CSS and JavaScript
+- events, architecture, user forms
+- web technologies...
+- Angular
+permission issue around SSL certificates
+   https://stackoverflow.com/questions/29141153/nodejs-npm-err-code-self-signed-cert-in-chain
+npm install -g @angular/cli
+in a suitable command window (e.g. in our webtech folder)
+ng new basics
+then 'y' and enter a few times until you see 'CREATING....'
+take a brief look around the 'basics' folder, especially inside 'app'
+(NB need to be using terminal window, seems to work better)
+Angular Topics
+> overview of the default files
+> clear out the demo content
+> html template and ts code (also css)
+> components and data binding (4 types of binding)
+> user interaction and events
+> building for development and for production
+> mini exercise
+
+Tuesday
+> forms and data binding in Angular ngModel
+> idea - can we take the user details from one component and pass them to another component model as an array
+> using @Input and @Output which is always an EVENT EMITTER
+> fix the onChanges so it appends to the array
+> so what's all this with the .ts files...?
+> accessing APIs in Angular - use a (re-useable) service
+> Angular architecture
+> routing
+> afternoon guest speaker
+> mini exercise
+> we need to make sure Ionic and Android Studio are in place ready for the rest of the week
+  https://ionicframework.com/docs/developing/android#configuring-command-line-tools up to make an emulator
+> how to check it's all working!!
+
+NB https://www.figma.com/file/oXoe3kukIeURV4V4sklnOb/Grads-UX?node-id=0%3A1
+
+Wednesday
+> review of the SWAPI project
+> a bit more 2-way binding (in forms)
+> Form validation
+> Style: Material Design etc.
+> Ionic
+	native Android uses Java and is hard
+	native iOS uses Swift/Objective C and is hard
+	or
+	take html, css and js => to native code
+	phonegap (no longer with us)
+	cordova (really easy)
+>>>>>>>>capacitor (even easier)
+	Xamarin (pretty easy)
+> the arch, swapiTD and myionic projects are ALL zipped in the repo
+> for Android (Windows, Linux or Mac is fine)
+> for iOS (must be using an Apple Mac with XCode)
+> lab time
+  develop your project - use documentation, my apps (swapi), your apps
+  - nice form fields with validation (think UI/UX)
+  - user stories and flow charts
+  - make sure your http-get etc. have error handling
+  - maybe try debounce for the form inputs
+  - show the returned data in a nice way
+  - consider architecture - develop a class for your API data?
+  - an Ionic version of the project
+> 4:30 is show time
+
+Thursday
+> we'd like some feedback for all the weeks up to now
+https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/247c3021-1f30-4bd4-81a2-5938465b24f4
+
+> authentication (Cognito)
+  https://angular.io/guide/security (also see routing guards)
+  https://auth0.com/blog/complete-guide-to-angular-user-authentication/
+  https://blog.angular-university.io/angular-jwt-authentication/
+  https://javascript.plainenglish.io/add-aws-cognito-auth-to-your-angular-app-without-amplify-64dfe656c65a
+  https://github.com/aws-amplify/amplify-js
+  https://docs.amplify.aws/start/q/integration/angular/
+
+> testing: unit and e2e
+  > testing dom, testing logic, testing models
+  > testing services, mocking
+  > e2e tests (in recent Angular, add e2e manually)
+> integrate with other tools
+> access device features (e.g. camera) ionic
+> afternoon guest speaker
+- more lab time
+
+- resolve http POST problem
+  - making POST requests causes a CORS error
+  - solution: pass a header specifying localhost:4200
+  - see 'arch' project in repo - 'api-service' and 'contact' component
+
+- an ionic camera example is here: https://github.com/ionic-team/tutorial-photo-gallery-angular
+
+Friday
+- A brief 'stand-up' after lunch
+  - where you're at
+  - what you aim to do
+- recommend code freeze by (say) mid afternoon
+- preso will be Monday 9:00
+- if any team would like to dry run their preso let me know
+  - 2:00 team Alobayo (?!?)
+  - 2:30 ....
+  - 3:30 team Marbled << can Team MARBLED please make their way to the preso room at 3:30 and join the OTHER webex call
+                         (link in chat)
+
+- Can I suggest you try to make a MOBILE version of your code
+- my 'arch' project is now up in the repo (as arch.zip)
+  - includes 'api.service.ts' with sample code for Nicks and one other end-point working
+
+- there was  a question related to custom pipe for 'health...'
+- any chance to see your repo? Ah-got it
+
+
+- angular vs Ionic
+  - you have an Angular proj
+  - you need a SEPARATE Ionic proj
+  - it is possible to copy code from Angualr to Ionic, once you have the projects
+
+
+Some ignorable suggestions for presentations:
+- avoid dense slides - talk don't read
+- everyone loves pictures
+- reherse demo and be sure it works
+- personally I like to see actual code. Not all of it, jsut a line or two,
+  elegantly explained. Not screen-shots, actual code
+- don't answer everything in the preso, let them ask!
+- the fewer slides the better (more time for demo, code etc.)
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
